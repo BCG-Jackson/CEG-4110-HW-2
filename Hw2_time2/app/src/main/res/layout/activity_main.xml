@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".View.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/clocksArea1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="193dp"
+                        android:layout_height="wrap_content"
+                        android:text="Title of clock:" />
+
+                    <EditText
+                        android:id="@+id/titleInput"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:text="Current Time" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp">
+
+                    <Button
+                        android:id="@+id/createNewButton"
+                        android:layout_width="188dp"
+                        android:layout_height="wrap_content"
+                        android:text="create new clock with given title" />
+
+                    <Button
+                        android:id="@+id/toggleClockView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Toggle Clock View" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/undoButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="undo" />
+
+                    <Button
+                        android:id="@+id/redoButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="redo" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/secondsPlus"
+                        android:layout_width="137dp"
+                        android:layout_height="wrap_content"
+                        android:text="Seconds +1" />
+
+                    <Button
+                        android:id="@+id/secondsMinus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="seconds -1" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/minutePlus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="minute +1" />
+
+                    <Button
+                        android:id="@+id/minuteMinus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="minute -1" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/hourPlus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="hour +1" />
+
+                    <Button
+                        android:id="@+id/hourMinus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="hour -1" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/dayPlus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="day +1" />
+
+                    <Button
+                        android:id="@+id/dayMinus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="day -1" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/monthPlus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="month +1" />
+
+                    <Button
+                        android:id="@+id/monthMinus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="month -1" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/yearPlus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="year +1" />
+
+                    <Button
+                        android:id="@+id/yearMinus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="year -1" />
+                </TableRow>
+
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="These buttons change the time of the clock(s) with the title in the text input area near the top." />
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.design.widget.CoordinatorLayout>
+
